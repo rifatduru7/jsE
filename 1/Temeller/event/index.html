@@ -1,0 +1,51 @@
+<!-- 
+    Shift + Alt + Yukarı-Aşağı  =>Satır Kopyalar.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Console</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Event Uygulaması Başlangıç -->
+    Sayı 1 :<input id="sayi1" type="text"><br>
+    Sayi 2 :<input id="sayi2" type="text"><br>
+    
+    <button onclick="topla()">+</button>
+    <button onclick="carp()">-</button>
+    <button onclick="cikar()">*</button>
+    <button onclick="bol()">/</button><br>
+    <h3>Sonuç</h3>
+    
+    
+    <div id="result">
+        
+    </div>
+    <!-- Event Uygulaması Başlangıç -->
+    
+    <button onclick="this.innerHTML = 'Hesaplandı!!!'">Hesapla</button>
+    <input onchange="console.log('Değişti!!')" type="text">
+    <select onchange="degistir()" id="liste">
+        <option >Ankara</option>
+        <option selected >İstanbul</option>
+        <option >Samsun</option>
+        <option >Bursa</option>
+    </select>
+    <div id="container">
+
+    </div>
+    <div class="area" onmouseover="innerHTML= 'Üzerinde!!!'" onmouseout="innerHTML='Ayrıldı!!!'">
+
+    </div>
+    <!-- <h3 id="h3" >Object</h3> -->
+
+    <script src="app.js">
+    
+    </script>
+</body>
+</html>

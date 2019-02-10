@@ -1,0 +1,18 @@
+.area{
+    height: 100px;
+    width: 200px;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: fff;
+}
+
+#result{
+    height: 200px;
+    width: 300px;
+    background-color: coral;
+    font-size: 30px;
+    color: fff;
+    margin-left: 5px;
+    padding: 20px;
+
+}
