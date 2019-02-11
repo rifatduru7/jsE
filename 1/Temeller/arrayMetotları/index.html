@@ -1,0 +1,91 @@
+<!-- 
+    Shift + Alt + Yukarı-Aşağı  =>Satır Kopyalar.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Console</title>
+</head>
+<body>
+    <h3 id="h3" >Javascripte Giriş</h3>
+    <div id="metin"></div>
+
+    <script>
+      
+       /*     console.log(personel_listesi[0]);
+       console.log(personel_listesi);
+       console.log(personel_listesi[2]);
+       personel_listesi[0] = "Murat";
+       
+       //Array değeri değiştirme
+       console.log(personel_listesi); */
+       
+       var personel_listesi = ["Rıfat", "Duru","Barış", "Manço", "Cem","Karaca", "Erkin", "Koray"];
+
+       /*
+       
+            *length
+            *toString()
+            *join
+            *pop
+            *push
+            *shift
+            *unshift
+            *splice
+            *splice for delete
+            *concat
+            *reverse
+       
+       */
+
+       console.log(personel_listesi);
+
+       // Length
+       console.log(personel_listesi.length);
+
+       // toString()
+       console.log(personel_listesi.toString());
+
+       // join() --Kayıt aralarına belirtilen veriler girilir.
+       console.log(personel_listesi.join("|"));
+
+       // pop() --Bir arrayden en sondaki elemanı çıkarır.
+       console.log(personel_listesi.pop());
+
+       // push() --Array'ın en sonuna eleman ekler.
+       console.log(personel_listesi.push("Metallica"));
+       console.log(personel_listesi);
+
+       // shift() --Array'deki ilk elemanı çıkarır.
+       console.log(personel_listesi.shift());
+       console.log(personel_listesi);
+
+       // unshift --Listenin en başına ekler.
+       console.log(personel_listesi.unshift("Ege"));
+       console.log(personel_listesi);
+
+       // splice() --Array içerisindeki verilen index'in başına veya verilen index'in yerine yeni eleman eklenebilir.
+       personel_listesi.splice(2,0,"Deneme");
+       console.log(personel_listesi);
+       personel_listesi.splice(2,1,"Megadeth");
+       console.log(personel_listesi);
+       
+       
+       // splice of delete --Array içerisinde belirtilen elemanları siler.
+       personel_listesi.splice(2,1);
+       console.log(personel_listesi); 
+
+       // concat() -- Arrayleri birleştirir.
+       var personel2 = ["Ahmet","Zeki","Oguzhan","Selim"];
+       var concat = personel_listesi.concat(personel2);
+       console.log(concat);
+
+       // reverse() --Arrayi tersine çevirir.
+       console.log(concat.reverse());
+    </script>
+</body>
+</html>

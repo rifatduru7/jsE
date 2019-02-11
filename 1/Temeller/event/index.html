@@ -13,8 +13,8 @@
 </head>
 <body>
     <!-- Event Uygulaması Başlangıç -->
-    Sayı 1 :<input id="sayi1" type="text"><br>
-    Sayi 2 :<input id="sayi2" type="text"><br>
+    Sayı 1 :<input pattern=“\d{5}” title="Bu alana sadece 5 Karakter" id="sayi1" type="text" required><br>
+    Sayi 2 :<input pattern=“\d{5}” title="Bu alana sadece 5 Karakter" id="sayi2" type="text" required><br>
     
     <button onclick="topla()">+</button>
     <button onclick="carp()">-</button>

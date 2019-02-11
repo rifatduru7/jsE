@@ -1,0 +1,78 @@
+<!-- 
+    Shift + Alt + Yukarı-Aşağı  =>Satır Kopyalar.
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Console</title>
+ </head>
+ <body>
+     <h3 id="h3" >Javascripte Giriş</h3>
+     <div id="metin"></div>
+ 
+     <script>
+     var metin = "Ben bugün VueJs'e başladım !!!!";
+     
+     // Karakter Uzunluğu
+ 
+     //alert(metin);
+     var len = metin.length;
+     //alert(len);
+     var pos = metin.indexOf("Vue");
+     //alert(pos);
+     //alert(metin);
+     var pos = metin.lastIndexOf("Js");
+     //alert(pos);
+     var text = metin.search("baş");
+     //alert(text);
+     
+     // Metin Parçalama
+ 
+     var text = metin.slice(0,3);
+     //alert(text);
+     var text = metin.slice(-10);
+     //alert(text);
+     //Substring ile verilen sayılar arasındaki karakterler kesilir.
+     var text = metin.substring(5,10);
+     //alert(text);
+     //Substr ile ilk verilen sayı kaçıncı sıradan başlayacağı.İkinci sayı ise kaç karakter seçileceğidir.
+     //Yani 3'ten sonra 12 karakter seç
+     var text = metin.substr(3,12);
+     //alert(text);
+ 
+     // Metin değiştirme
+ 
+     // İçerisinde değiştirilmesi gereken kelime 1 den fazla ise /VueJs/g şeklinde yazılır.
+     var newText = metin.replace("VueJs", "Vue-JS");
+     //alert(newText);
+ 
+     // Karakter işlemleri
+ 
+     var upper = metin.toLocaleUpperCase();
+     //alert(upper);
+     var lover = metin.toLocaleLowerCase();
+     //alert(lover);
+     
+     
+     //Metin Birleştirme
+ 
+     var fname = "Rıfat";
+     var lname = "Duru";
+                               //Boşluk
+     var fullName = fname.concat(" ", lname);
+     //alert(fullName);
+ 
+     // Split - Belirtilen karakterler arasına ayrılır ve dizi olarak yazdırır.
+ 
+     var splitText = "Rıfat;Duru;Mete;Ege;Murat";
+     var list = splitText.split(";");
+     console.log(list);
+ 
+ 
+     </script>
+ </body>
+ </html>
