@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Text Methot</title>
+    <title>fadein metot</title>
     <script src="jquery-3.3.1.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script> -->
+
+
 </head>
+
 
 <script type="text/javascript">
     // Element Seçmek
@@ -25,27 +28,17 @@
             $("#container.author");
     */
     /*
-        Val
+        fadein()
         $(secici).metotAdi();
-        Input elementleri içerisindeki veriyi getirir veya set eder.
+        Seçili elementi soldurarak getirir.
     */
+
     $(document).ready(function () {
 
-        $(".mybtn").click(function(){
-
-            var data = $(".giris").val();
-            alert(data);
-        })
-        $(".degis").click(function(){
-
-            $(".giris").val("Rıfat Duru");
-
-        })
-        $(".ilgetir").click(function(){
-
-            var il = $("select[name=il]").val();
-            alert(il);
-
+        $(".mybtn").click(function () {
+            $(".container").fadeIn("slow");
+            //fadeIn(parametre) içerisine parametreler arabilir 
+            //fast,slow,yada milisaniye cinsinden değer(3000=3sn gibi).
 
         })
 
@@ -53,18 +46,25 @@
     })
 </script>
 
+<style>
+    .container {
+        display: none;
+        font-size: 15px;
+        border: 1px solid #f85;
+        width: 700px;
+        margin: 10px;
+        padding: 10px;
+
+    }
+</style>
+
 <body>
 
-    <button class="mybtn">Gonder</button>
-    <button class="degis">Degistir</button>
-    <button class="ilgetir">ilgetir</button>
+    <button class="mybtn">Getir</button>
 
-    <select name="il">
-        <option value="istanbul">İstanbul</option>
-        <option value="ankara">Ankara</option>
-    </select>
-    <input type="text" class="giris">
-<!--     <div class="result"></div>
+    <!--     
+    <div class="result"></div>
+-->
     <div class="container" data="Lorem İpsum">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatum, maiores doloribus accusantium rerum
         suscipit ipsum. Voluptatibus accusantium cumque excepturi, est quaerat qui explicabo earum, et exercitationem
@@ -75,7 +75,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde mollitia nostrum veniam labore est
         necessitatibus obcaecati libero a blanditiis, totam quo eligendi vero alias. Culpa, dolores velit. Earum,
         soluta.
-    </div> -->
+    </div>
     <!--     <hr>
    <div class="click">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatum, maiores doloribus accusantium rerum
