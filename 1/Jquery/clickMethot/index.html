@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Çağırma</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script> -->
+</head>
+
+<script type="text/javascript">
+    // Element Seçmek
+
+    // Class için " . "  Id için " # " kullanılır. 
+
+    /*      $("#box");
+            $("div.box");
+            $("div");
+            $("body");
+            $("#linkler");
+            $("button[name='save']");
+            $("#container.author");
+    */
+    /*
+        Click
+        $(secici).metotAdi();
+        Bir elemente tıklanıp tıklanmadığını kontrol eden metottur.
+    */
+    $(document).ready(function(){
+
+        $(".mybtn").click(function(){
+
+            //alert();
+            $(".container").css("background-color","yellow");
+        });
+        $(".click").click(function(){
+
+            $(".container").css("width", "300px");
+        })
+
+
+
+    })
+
+
+
+</script>
+
+<body>
+
+    <button class="mybtn">Tıkla</button>
+
+   <div class="container" data="Lorem İpsum">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatum, maiores doloribus accusantium rerum
+        suscipit ipsum. Voluptatibus accusantium cumque excepturi, est quaerat qui explicabo earum, et exercitationem
+        officiis aspernatur fuga?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum inventore accusamus laudantium consequuntur? Quod
+        minima amet distinctio id, praesentium voluptates consectetur, asperiores dolores ducimus possimus sint
+        corrupti est laborum necessitatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde mollitia nostrum veniam labore est
+        necessitatibus obcaecati libero a blanditiis, totam quo eligendi vero alias. Culpa, dolores velit. Earum,
+        soluta.
+    </div>
+    <hr>
+   <div class="click">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatum, maiores doloribus accusantium rerum
+        suscipit ipsum. Voluptatibus accusantium cumque excepturi, est quaerat qui explicabo earum, et exercitationem
+        officiis aspernatur fuga?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum inventore accusamus laudantium consequuntur? Quod
+        minima amet distinctio id, praesentium voluptates consectetur, asperiores dolores ducimus possimus sint
+        corrupti est laborum necessitatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde mollitia nostrum veniam labore est
+        necessitatibus obcaecati libero a blanditiis, totam quo eligendi vero alias. Culpa, dolores velit. Earum,
+        soluta.
+    </div>
+<!--  
+    <div class="container2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ratione ut laudantium corporis cum quo
+        necessitatibus doloremque aliquam, dicta consequuntur eveniet! Dolor odit placeat deleniti eaque. Similique
+        molestias error tempore.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis hic facilis magni provident, architecto sunt
+        velit iusto, recusandae tenetur praesentium harum magnam laboriosam, aliquid consequatur corrupti cumque
+        distinctio quis ea?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam corporis quaerat possimus modi ad reiciendis
+        totam! Deleniti obcaecati rerum, temporibus porro sequi veniam expedita quam in possimus laudantium esse odio.
+    </div> -->
+
+</body>
+
+</html>
