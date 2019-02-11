@@ -1,0 +1,67 @@
+<!-- 
+    Shift + Alt + Yukarı-Aşağı  =>Satır Kopyalar.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Console</title>
+</head>
+<body>
+    <h3 id="h3" >Koşullar</h3>
+    <div id="metin"></div>
+
+    <script>
+        var email = "rifat@rifatduru.com";
+        var sifre = "123456"
+            if(email == "rifat@rifatduru.com"){
+                //alert("Mail Doğru");
+            }else{
+                //alert("Mail hatalı");
+            }
+
+        if(email == "rifat@rifatduru.com"){
+            if(sifre == "123456"){
+                //alert("Tebrikler başarılı giriş");
+            }else{
+                //alert("Hatalı giriş")
+                }
+        }else{
+            //alert("Hatalı giriş")
+            }
+
+    // X AND Y => true  İki şart sağlanırsa çalışır.        
+        if(email == "rifat@rifatduru.com" && sifre == "123456"){
+            //alert("Giriş başarılı");
+        }else{
+            //alert("Giriş Hatalı");
+        }
+    
+    // X OR Y => true  İki şarttan biri sağlanırsa çalışır.
+        if(email == "rifat@rifatduru.com" || sifre == "123456"){
+            //alert("Giriş başarılı");
+        }else{
+            //alert("Giriş Hatalı");
+        }        
+
+
+
+
+        var sayi = 5;
+            if (sayi <6) {
+                console.log("Sayı 6'dan küçüktür");
+            } else if (sayi>6) {
+                console.log("Sayı 6'dan büyüktür.");
+            } else if (sayi ==6){
+                console.log("Sayının değeri 6'dır.");
+            }else{
+                console.log("Sayı girilmedi");
+            }
+
+      
+    </script>
+</body>
+</html>
