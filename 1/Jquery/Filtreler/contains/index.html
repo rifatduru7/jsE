@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>:contains</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script> -->
+
+
+</head>
+
+
+<script type="text/javascript">
+    // Element Seçmek
+
+    // Class için " . "  Id için " # " kullanılır. 
+
+    /*      $("#box");
+            $("div.box");
+            $("div");
+            $("body");
+            $("#linkler");
+            $("button[name='save']");
+            $("#container.author");
+    */
+    /*  
+        :contains
+        $(secici).metotAdi();
+        :contains - Seçilen elementler içinde istenilen kelimeyi bulur...
+    */
+    $(document).ready(function () {
+
+        $("button").click(function () {
+
+            var search_text = $("#search").val();
+            $("ul li").css("border", "1px solid #eee");
+            $("ul li:contains('" + search_text + "')").css("border", "1px solid #f00");
+            /*$("ul li").hide();*/
+            /*  $("ul li:first").css("border","1px solid #f00");*/
+
+        })
+
+    })
+</script>
+
+<style>
+    .container {
+        /*display: none;*/
+        font-size: 15px;
+        border: 1px solid #f85;
+        width: 700px;
+        /* Dışardan */
+        margin: 10px;
+        /* İçerden */
+        padding: 10px;
+
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+        width: 200px;
+    }
+
+    ul li {
+        padding: 5px 10px;
+        border: 1px solid #eee;
+        margin-bottom: 5px;
+    }
+
+        ul li:hover{
+        background-color:cadetblue;
+        border: 1px solid #ccc;
+    } 
+</style>
+
+<body>
+    <input type="text" id="search">
+    <button>Ara</button>
+    <ul>
+        <li>Kiraz</li>
+        <li>Elma</li>
+        <li>Armut</li>
+        <li>Şeftali</li>
+        <li>Portakal</li>
+        <li>Mortakal</li>
+        <li>Muz</li>
+        <li>Karpuz</li>
+
+    </ul>
+
+
+    <!--
+    
+        <button class="toggleBtn">SlideToggle</button>
+        <button class="slideUpbtn">SlideUp</button> 
+    
+    -->
+
+
+
+
+    <!--     <hr>
+   <div class="click">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatum, maiores doloribus accusantium rerum
+        suscipit ipsum. Voluptatibus accusantium cumque excepturi, est quaerat qui explicabo earum, et exercitationem
+        officiis aspernatur fuga?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum inventore accusamus laudantium consequuntur? Quod
+        minima amet distinctio id, praesentium voluptates consectetur, asperiores dolores ducimus possimus sint
+        corrupti est laborum necessitatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde mollitia nostrum veniam labore est
+        necessitatibus obcaecati libero a blanditiis, totam quo eligendi vero alias. Culpa, dolores velit. Earum,
+        soluta.
+    </div> -->
+
+    <!-- a href'in parent'i container2'dir. -->
+    <!-- <div>
+    <div class="container">
+        Bu parent metodunun bir örneğidir.
+       <a href="#" class="silBtn">Değiştir</a>
+   </div> 
+</div> -->
+
+</body>
+
+</html>
